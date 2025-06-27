@@ -1,0 +1,120 @@
+/* Link this CSS in your HTML head:
+   <link rel="stylesheet" href="styles.css">
+*/
+
+/* 1) Define your dark-blue palette */
+:root {
+  --bg-primary:    #0A2239;   /* very dark navy */
+  --bg-secondary:  #122240;   /* slightly lighter navy */
+  --text-primary:  #FFFFFF;   /* pure white */
+  --text-secondary:#D1D7E0;   /* light gray-blue */
+  --accent:        #4DA6FF;   /* bright azure */
+  --accent-dark:   #387FCC;   /* darker accent */
+}
+
+/* 2) Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--accent-dark);
+}
+
+/* 3) Layout sections */
+header,
+.hero,
+.features,
+footer {
+  background-color: var(--bg-secondary);
+  padding: 2rem 1rem;
+}
+
+/* 4) Typography */nh1, h2, h3, h4, h5, h6 {
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+}
+p, li {
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+/* 5) Buttons & CTAs */
+.btn,
+.button,
+button {
+  display: inline-block;
+  background-color: var(--accent);
+  color: var(--text-primary);
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+.btn:hover,
+.button:hover,
+button:hover {
+  background-color: var(--accent-dark);
+}
+
+/* 6) Form elements */
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--accent);
+  border-radius: 0.25rem;
+  color: var(--text-primary);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--text-secondary);
+}
+
+/* 7) Cards, panels, testimonials */
+.card,
+.panel,
+blockquote,
+.testimonial {
+  background-color: var(--bg-secondary);
+  border-left: 4px solid var(--accent);
+  padding: 1rem 1.5rem;
+  margin: 1rem 0;
+  color: var(--text-primary);
+}
+
+/* 8) Utility helpers */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.text-center {
+  text-align: center;
+}
+.mt-2 {
+  margin-top: 0.5rem;
+}
+.mt-4 {
+  margin-top: 1rem;
+}
+.mb-4 {
+  margin-bottom: 1rem;
+}
