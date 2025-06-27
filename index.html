@@ -1,70 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PortaIQ – Your Smart Investment Copilot</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="manifest" href="manifest.json">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXX');
-  </script>
- </head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PortaIQ – Your AI-Powered Investment Portfolio Assistant</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
 <body>
-  <header>
-    <h1>PortaIQ – Your Smart Investment Copilot</h1>
-    <p>Finally, an AI assistant that makes your entire portfolio smarter — and your goals more achievable.</p>
+  <!-- Hero Section -->
+  <header class="hero text-center">
+    <div class="container">
+      <h1>PortaIQ: Your AI-Powered Investment Portfolio Assistant</h1>
+      <p>Get personalized insights, real-time recommendations, and effortless portfolio tracking—all in one smart dashboard.</p>
+      <form action="/signup" method="POST" class="signup-form">
+        <input type="email" name="email" placeholder="you@example.com" required />
+        <button type="submit" class="btn">Join Beta</button>
+      </form>
+    </div>
   </header>
 
-  <section>
-    <h2 style="text-align:center; font-size:2rem;">Why Choose PortaIQ?</h2>
-    <p style="text-align:center; max-width:700px; margin: 0 auto;">Managing investments can be overwhelming. PortaIQ gives you clarity, confidence, and control — powered by smart AI insights.</p>
-
-<div class="feature">
-  <h3>📊 See Everything in One View</h3>
-  <p>
-    Say goodbye to spreadsheets and scattered apps. Track stocks, crypto, retirement accounts, mutual funds, and even platform fees — all from one intelligent dashboard. Seamlessly connect accounts from Vanguard, Robinhood, Fidelity, Binance, and more.
-  </p>
-  <div style="margin-top: 10px;">
-    <img src="vanguard_logo.png" alt="Vanguard" height="24" style="margin-right:10px;vertical-align:middle;" />
-    <img src="robinhood_logo.png" alt="Robinhood" height="24" style="margin-right:10px;vertical-align:middle;" />
-    <img src="fidelity_logo.png" alt="Fidelity" height="24" style="margin-right:10px;vertical-align:middle;" />
-    <img src="binance_logo.png" alt="Binance" height="24" style="vertical-align:middle;" />
-  </div>
-</div>
-
-      <div class="feature">
-        <h3>🧠 Get Smarter Insights Instantly</h3>
-        <p>Understand where you’re overexposed, under-diversified, or taking on too much risk — with AI that does the thinking for you.</p>
-      </div>
-      <div class="feature">
-        <h3>💬 Ask Anything. Seriously.</h3>
-        <p>Wondering if you’re too heavy in tech? Or how inflation affects your portfolio? Just ask — our smart assistant speaks your language.</p>
-      </div>
-      <div class="feature">
-        <h3>🎯 Make Your Money Work Toward Your Goals</h3>
-        <p>Tell PortaIQ your life goals — like buying a home, retiring early, or building wealth — and get a portfolio strategy that adapts to you.</p>
-      </div>
+  <!-- Features Section -->
+  <section class="features container">
+    <div class="feature">
+      <h2>Personalized Insights</h2>
+      <p>AI-driven analysis of your holdings tailored to your goals.</p>
+    </div>
+    <div class="feature">
+      <h2>Real-Time Recommendations</h2>
+      <p>GenAI suggests buys, sells, and rebalances instantly.</p>
+    </div>
+    <div class="feature">
+      <h2>Goal Tracking</h2>
+      <p>Visual progress bars for targets like retirement or major purchases.</p>
+    </div>
+    <div class="feature">
+      <h2>Secure Data Sync</h2>
+      <p>Bank-level encryption—connect accounts in seconds.</p>
     </div>
   </section>
-  <section class="cta">
-  <h2 style="font-size: 2rem;">🚀 Be First to Try PortaIQ</h2>
-  <p>Join our private beta and see how AI can simplify your investment strategy — no spreadsheets, just smarter wealth building.</p>
-   <script async src="https://subscribe-forms.beehiiv.com/embed.js">
-   </script>
-    <iframe src="https://subscribe-forms.beehiiv.com/c58fbbc2-edb0-468f-b96e-e6c69fb86d67" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width: ; height: ; margin: 0; border-radius: 0px 0px 0px 0px !important; background-color: transparent; box-shadow: 0 0 #0000;"></iframe>
-    
+
+  <!-- Social Proof / Testimonials -->
+  <section class="social-proof container">
+    <blockquote class="testimonial">
+      “PortaIQ helped me spot undervalued stocks I’d never seen—amazing!”
+      <footer>— Early beta user</footer>
+    </blockquote>
   </section>
 
-  
-  <footer>
-    &copy; 2025 PortaIQ. All rights reserved. | <a href="#" style="color:#005DFF;text-decoration:none;">Privacy Policy</a>
+  <!-- Footer / Notify -->
+  <footer class="footer text-center">
+    <div class="container">
+      <p>Notify me when we launch:</p>
+      <form action="/notify" method="POST" class="notify-form">
+        <input type="email" name="email" placeholder="you@example.com" required />
+        <button type="submit" class="btn">Notify Me</button>
+      </form>
+      <p class="mt-4">
+        <a href="/about">About</a> · <a href="/faq">FAQ</a> · <a href="/privacy">Privacy Policy</a>
+      </p>
+    </div>
   </footer>
 </body>
 </html>
